@@ -1,6 +1,11 @@
 
 RDSmanualbackups
 ================
+A python boto automated manual rds backups
+
+### Dependencies
+		boto.rds2
+
 
 ### Automated Manual RDS Backups
 When to use it when there's an automated snapshot?

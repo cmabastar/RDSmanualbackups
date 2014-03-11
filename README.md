@@ -1,5 +1,5 @@
 
-Amazon RDS Automated Manual Backups
+AWS RDS Automated Manual Backups
 ================
 A python boto automated manual rds backups
 

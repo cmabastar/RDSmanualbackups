@@ -3,8 +3,12 @@ RDSmanualbackups
 
 Automated Manual RDS Backups
 
+When to use it when there's an automated snapshot?
+
+In cases of accidental deletion of RDS instance, the automated snapshots are also gone and there's no way to recover. This script will be doing manual snapshots and will only be deleted when the admin specifically deletes the rds snapshots.
 
 How to use:
+====
 Provide access key/id and update the dbs array for whitelisted names of database. The script is intended to snapshot from the master.
 
 ====

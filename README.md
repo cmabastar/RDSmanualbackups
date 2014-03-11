@@ -5,10 +5,11 @@ Automated Manual RDS Backups
 
 
 How to use:
-Provide access keys and 
+Provide access key/id and update the dbs array for whitelisted names of database. The script is intended to snapshot from the master.
+
 ====
-Run
-  python rds_backup.py
+
+    python rds_backup.py
   
 This script will create an rds-snapshots/ folder and create a filename of the database snapshot to be created.
 

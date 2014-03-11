@@ -37,6 +37,6 @@ for snap in list_snapshots:
                 if (date_object < acceptable_date):
                         # Delete it here
                         print "Deleting expired snapshot... " + dbs_id
-                        conn.delete_db_snapshot('rds-man-snapshot-2014-03-07-0439')
+                        conn.delete_db_snapshot(dbs_id)
                         # Remove the files
                         os.remove('./rds-snapshots/' + dbs_id)

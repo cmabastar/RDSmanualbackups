@@ -25,9 +25,9 @@ for db in instances:
         # Backup only main database;Skip read replicas
         dbname = str(db)[11:]
         if db.status_infos or dbname in dbs:
-                print dbname
+                print (dbname)
                 if not re.findall(r"[2-9]",dbname):
-                        backup_name = dbname + "-" + (time.strftime("%Y-%m-%d-%H%M"))
+                        backup_name = dbname + "-" + (time.strftime("%Y-%m-%d-%H-%M"))
                         touch(directory + backup_name + '.bak')
-                        print "Backing up db... " + backup_name
+                        print ("Backing up db... " + backup_name)
                         db.snapshot(backup_name)
